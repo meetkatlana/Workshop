@@ -14,11 +14,8 @@ Hello! I am a **CSE Core student** with a deep passion for **frontend developmen
 - **Frameworks & Libraries:** Tailwind CSS, Bootstrap, GSAP (still learning)
 - **Tools & Platforms:** VS Code, GitHub
 
-### 📊 GitHub Stats
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YourFriendGitHubUsername&show_icons=true&theme=react)
-
 ### 🎯 Fun Fact
 🎨 I believee that **design is not just about looks, but also about user experience**, and I constantly experiments with new web technologies to enhance usability!
 
-📫 **Connect with Him!**  
+📫 **Connect with Me!**  
 [LinkedIn](https://www.linkedin.com/in/meet-katlana-a3b808330)

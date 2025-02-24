@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+
+}
+#login{
+    margin:30px;
+}
+#register{
+    display:grid;
+    border:10px;
+    justify-content: center;
+    margin: 50px;
+    background-color: black;
+    color: #fff;
+}

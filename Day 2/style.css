@@ -1,0 +1,14 @@
+
+form{
+    display: grid;
+    justify-content: center;
+    border: 2px solid black;
+}
+label,input{
+    margin-top: 10px;
+}
+button{
+    margin-top: 10px;
+    background-color: aqua;
+}
+

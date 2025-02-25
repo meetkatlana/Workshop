@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let table=document.createElement("table");
+        let headRow=document.createElement("tr");
+        let serialHead=document.createElement("th");
+        let nameHead=document.createElement("th");
+        let emailHead=document.createElement("th");
+        let phoneHead=document.createElement("th");
+        let cityHead=document.createElement("th");
+        let zipcodeHead=document.createElement("th");
+        
+        serialHead.innerHTML="S.No";
+        nameHead.innerHTML="Name";
+        emailHead.innerHTML="Email";
+        phoneHead.innerHTML="Phone";
+        cityHead.innerHTML="City";
+        zipcodeHead.innerHTML="ZipCode";
+        
+        headRow.appendChild(serialHead);
+        headRow.appendChild(nameHead);
+        headRow.appendChild(emailHead);
+        headRow.appendChild(phoneHead);
+        headRow.appendChild(cityHead);
+        
+        headRow.appendChild(zipcodeHead);
+        table.appendChild(headRow);
+        document.body.appendChild(table);
+        table.border="1";
+        
+
+
+        let api="https://jsonplaceholder.typicode.com/users";
+
+        let getData=async()=>{
+            let res =await fetch(api);
+            let resData= await res.json()
+            console.log(resData[0]);
+            
+            resData.map((n)=>{
+                let newRow =document.createElement("tr");
+                let serialCell =document.createElement("td");
+                let nameCell = document.createElement("td");
+                let emailCell=document.createElement("td");
+                let phoneCell=document.createElement("td"); 
+                
+                let cityHead=document.createElement("td");
+                let zipcodeHead=document.createElement("td");
+                
+                 
+                serialCell.innerHTML=n.id;
+                nameCell.innerHTML=n.name;
+                emailCell.innerHTML=n.email;
+                phoneCell.innerHTML=n.phone;
+               
+                cityHead.innerHTML=n.address.city;
+                zipcodeHead.innerHTML=n.address.zipcode;
+                newRow.appendChild(serialCell);
+                newRow.appendChild(nameCell);
+                newRow.appendChild(emailCell);
+                newRow.appendChild(phoneCell);
+                
+                newRow.appendChild(cityHead);
+                newRow.appendChild(zipcodeHead);
+                table.appendChild(newRow);
+            })
+        }
+        getData();
+
+
+       let arr =[1,2,3,4,5];
+       const newArray= arr.map((n)=>{
+            return n*n;
+        })
+        console.log(arr);
+        console.log(newArray);
+    </script>
+    
+</body>
+</html>

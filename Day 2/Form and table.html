@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="">
+        <h1>Form</h1>
+        <label>Name :</label>
+        <input type="text"  name="name" id="name" placeholder="Enter the Name">
+        <label>Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter the Email">
+        <button>Submit</button>
+    </form>
+     
+
+    <table id="tab" border="1">
+        <tr>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+
+
+    </table>
+
+
+    <script>
+        let form=document.querySelector("form");
+        let name=document.getElementById("name");
+        let email=document.getElementById("email");
+        
+        //To store form Data
+
+        // form.addEventListener("submit",()=>{
+        //     event.preventDefault();  //to hold the data
+        //     console.log(name.value);   
+        //     console.log(email.value)
+        // })
+
+        //To store Table data
+
+        form.addEventListener("submit",()=>{
+            event.preventDefault();
+            let nameValue=name.value;
+            let emailValue=email.value;
+           
+            //when we submit the data without entry it show alert
+            if(nameValue==="" || emailValue ===""){
+             alert("All Field Are Required")
+             return;
+            }
+            
+            //to create the blocks
+            let table=document.querySelector("#tab");
+            let serialNum =table.rows.length;
+            let newRow =document.createElement("tr");
+            let serialCell=document.createElement("td");
+            let nameCell=document.createElement("td");
+            let emailCell=document.createElement("td");
+            
+            //to get data
+            serialCell.innerHTML=serialNum;
+            nameCell.textContent = nameValue;
+            emailCell.textContent=emailValue;
+            
+            //Show the data in web page
+            newRow.appendChild(serialCell);
+            newRow.appendChild(nameCell);
+            newRow.appendChild(emailCell);
+            table.appendChild(newRow);
+            
+            // to empty the table
+            name.value=""
+            email.value=""
+              
+            //To style the table
+            serialCell.style.backgroundColor='crimson';
+            nameCell.style.backgroundColor='orange';
+            emailCell.style.backgroundColor='teal';
+        
+
+        })
+
+     
+    </script>
+    
+</body>
+</html>

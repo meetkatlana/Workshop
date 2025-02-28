@@ -1,0 +1,173 @@
+<?php
+// echo "hello world"
+
+
+//operations
+
+// $a=10;
+// $b=20;
+// $sum=$a+$b;
+// $multiply=$a*$b;
+// $subtract=$a-$b;
+// $divide=$a/$b; 
+// echo "$a+$b=$sum";
+// echo "<br>";
+// echo "$a*$b=$multiply";
+// echo "<br>";
+// echo "$a-$b=$subtract";
+// echo "<br>";
+// echo "$a/$b=$divide";
+// echo "<br>";
+
+
+//even or odd
+
+// $num=11;
+// if($num%2==0){
+//     echo "<h1>even</h1>";}
+//     else{
+//         echo "<h1>odd</h1>";
+//     }
+
+
+//
+// $num=11;
+// if($num>0){
+//     echo "<h1>positive</h1>";}
+//     if ($num<0){
+//         echo "<h1>negative</h1>";
+//           else{
+//             echo "<h1>number is zero</h1>"
+//         }
+//     }
+
+    // $a=10;
+    // $b=20;
+    // $sum=$a+$b;
+    // echo "$a+$b=$sum";
+    // echo "<br>";
+    // $final= "$sum/2";
+    // if(($final)>20 && (($final)<50)){  //u cant execute any operation and not comapare it at the same time  
+    //     echo "sum is in range";
+    // } else{
+    //     echo "sum is out of range";
+    // }
+
+
+    //nested if
+    // $a=101;
+    // $b=20;
+    // $sum=$a+$b;
+    // echo "$a+$b=$sum";
+    // echo "<br>";
+    // $final= $sum/2;
+    // if($final%2==0){
+    //     echo "<h1>it is even</h1><br>";
+    //     if(($final)>20 && (($final)<50)){  //u cant execute any operation and not comapare it at the same time  
+    //     echo "sum is in range";
+    // } else{
+    //     echo "sum is out of range";}
+    // }else{
+    //     echo "<h1>it is odd </h1><br>";
+    // }
+
+
+//just know how to use switch
+    // $signal="green";
+    // switch($signal){
+    // case "red":
+    // echo "<h1>stop</h1>";
+    // break;
+    // case "yellow":
+    //     echo "<h1>steady</h1>";
+    //     break;
+    // case "green":
+    //         echo "<h1>go</h1>";
+    //         break;
+    //         default:
+    //         echo "<h1>its me<h1>";
+
+    // }
+
+
+    //loops
+    // $i=1;
+    // for( $i = 1; $i < 11; $i++ ){
+    //     echo"$i <br>";
+    // }
+
+
+    //for loop
+    // for ($i = 1; $i < 101; $i++) {
+    //     if($i%5==0 && $i%3== 1){  
+    //         echo "<h1>fizzbuzz</h1><br>";
+    //     }elseif($i%3==0){
+    //         echo "<h1>fizz</h1><br>";
+    //     }elseif($i%5==0){
+    //         echo "<h1>buzz</h1><br>";
+    //     }else{
+    //             echo "<h1>$i</h1><br>";}
+    //     }
+        
+
+    //while loop
+//     $i = 1;
+// while ($i < 101) {
+//     if ($i % 5 == 0 && $i % 3 == 1) {
+//         echo "<h1>fizzbuzz</h1><br>";
+//     } elseif ($i % 3 == 0) {
+//         echo "<h1>fizz</h1><br>";
+//     } elseif ($i % 5 == 0) {
+//         echo "<h1>buzz</h1><br>";
+//     } else {
+//         echo "<h1>$i</h1><br>";
+//     }
+//     $i++; 
+// }
+
+        //do-while
+        //$i = 1;
+// do {
+//     if ($i % 5 == 0 && $i % 3 == 1) {
+//         echo "<h1>fizzbuzz</h1><br>";
+//     } elseif ($i % 3 == 0) {
+//         echo "<h1>fizz</h1><br>";
+//     } elseif ($i % 5 == 0) {
+//         echo "<h1>buzz</h1><br>";
+//     } else {
+//         echo "<h1>$i</h1><br>";
+//     }
+//     $i++; 
+// } while ($i < 101);
+
+
+//array
+// $arr =array("a","b","c","d","e","f");
+// echo"<h1>$arr[3]</h1>";
+// print_r($arr);
+
+
+// $arr =array("name"=>"ram","age"=>26) ;
+// echo"<h1>$arr[name]</h1>";
+
+
+// $letters =array("a","b","c","d","e","f");
+// foreach($letters as $letter){       //letter with no s
+//     echo "$letter<br>";  
+// }
+
+
+//functions
+
+//check even  or odd using func
+// $num = 172;
+// function checkEvenOrOdd($num) {
+//     if ($num % 2 == 0) {
+//         return "Even";
+//     } else {
+//         return "Odd";
+//     }
+// }
+// echo "The number $num is " . checkEvenOrOdd($num);
+
+

@@ -1,0 +1,24 @@
+body{
+    background-image: url(img.jpg);
+    display: grid;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+    width: 300px;
+   
+    border: 2px solid white;
+    box-sizing: border-box;
+
+}
+input,textarea{
+    border: 2px solid black;
+}
+#button{
+    background-color: olive;
+    margin-bottom: 10px;
+    width: 70px;
+    margin-left: 45px;  
+}
